@@ -15,7 +15,7 @@
 		46A268DE1E335CA6001267D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A268DC1E335CA6001267D9 /* LaunchScreen.storyboard */; };
 		46A268E91E335CA6001267D9 /* CommunityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A268E81E335CA6001267D9 /* CommunityTests.swift */; };
 		46A268F41E335CA6001267D9 /* CommunityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A268F31E335CA6001267D9 /* CommunityUITests.swift */; };
-		46A269021E33625D001267D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46A269011E33625D001267D9 /* GoogleService-Info.plist */; };
+		46F23B921E33A39A00C4426B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46F23B911E33A39A00C4426B /* GoogleService-Info.plist */; };
 		69C2BDD504D5460DE3852C3B /* libPods-Community.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 990F85E2C8260D87A5B3EF22 /* libPods-Community.a */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +53,8 @@
 		46A268EF1E335CA6001267D9 /* CommunityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommunityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A268F31E335CA6001267D9 /* CommunityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityUITests.swift; sourceTree = "<group>"; };
 		46A268F51E335CA6001267D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46A269011E33625D001267D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		46A269031E339EE1001267D9 /* Community.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Community.entitlements; sourceTree = "<group>"; };
+		46F23B911E33A39A00C4426B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		990F85E2C8260D87A5B3EF22 /* libPods-Community.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Community.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,12 +109,13 @@
 		46A268CF1E335CA6001267D9 /* Community */ = {
 			isa = PBXGroup;
 			children = (
+				46A269031E339EE1001267D9 /* Community.entitlements */,
 				46A268D01E335CA6001267D9 /* AppDelegate.swift */,
 				46A268D21E335CA6001267D9 /* ViewController.swift */,
 				46A268D41E335CA6001267D9 /* Main.storyboard */,
 				46A268DA1E335CA6001267D9 /* Assets.xcassets */,
 				46A268DC1E335CA6001267D9 /* LaunchScreen.storyboard */,
-				46A269011E33625D001267D9 /* GoogleService-Info.plist */,
+				46F23B911E33A39A00C4426B /* GoogleService-Info.plist */,
 				46A268DF1E335CA6001267D9 /* Info.plist */,
 				46A268D71E335CA6001267D9 /* Community.xcdatamodeld */,
 			);
@@ -228,6 +230,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = JDXP78N385;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					46A268E31E335CA6001267D9 = {
 						CreatedOnToolsVersion = 8.0;
@@ -269,7 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46A268DE1E335CA6001267D9 /* LaunchScreen.storyboard in Resources */,
-				46A269021E33625D001267D9 /* GoogleService-Info.plist in Resources */,
+				46F23B921E33A39A00C4426B /* GoogleService-Info.plist in Resources */,
 				46A268DB1E335CA6001267D9 /* Assets.xcassets in Resources */,
 				46A268D61E335CA6001267D9 /* Main.storyboard in Resources */,
 			);
@@ -497,6 +504,7 @@
 			baseConfigurationReference = 299C5FF21C56159584A4A86D /* Pods-Community.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Community/Community.entitlements;
 				DEVELOPMENT_TEAM = JDXP78N385;
 				INFOPLIST_FILE = Community/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -511,6 +519,7 @@
 			baseConfigurationReference = 424DC7528002FB5683697D94 /* Pods-Community.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Community/Community.entitlements;
 				DEVELOPMENT_TEAM = JDXP78N385;
 				INFOPLIST_FILE = Community/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -597,6 +606,7 @@
 				46A268FA1E335CA6001267D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46A268FB1E335CA6001267D9 /* Build configuration list for PBXNativeTarget "CommunityTests" */ = {
 			isa = XCConfigurationList;
@@ -605,6 +615,7 @@
 				46A268FD1E335CA6001267D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46A268FE1E335CA6001267D9 /* Build configuration list for PBXNativeTarget "CommunityUITests" */ = {
 			isa = XCConfigurationList;
@@ -613,6 +624,7 @@
 				46A269001E335CA6001267D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -15,8 +15,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //Sign in with email
-        FIRAuth.auth()?.signIn(withEmail: "soyadiaoune@gmail.com", password: "password123") { (user, error) in
-            // ...
+        FIRAuth.auth()?.signIn(withEmail: "soyadiaoune@gmail.com", password: "password123", completion: { (FIRUser, Error) in
+            print(Error)
+        })
+        //Sign Out
+        let firebaseAuth = FIRAuth.auth()
+        do {
+            try firebaseAuth?.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
         }
         
     }
