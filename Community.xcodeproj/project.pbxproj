@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EADFC9849D6C5D42407634B /* Pods_Community.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D46DA3208E23279846156110 /* Pods_Community.framework */; };
 		46A268D11E335CA6001267D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A268D01E335CA6001267D9 /* AppDelegate.swift */; };
 		46A268D31E335CA6001267D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A268D21E335CA6001267D9 /* ViewController.swift */; };
 		46A268D61E335CA6001267D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A268D41E335CA6001267D9 /* Main.storyboard */; };
@@ -16,8 +17,6 @@
 		46A268E91E335CA6001267D9 /* CommunityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A268E81E335CA6001267D9 /* CommunityTests.swift */; };
 		46A268F41E335CA6001267D9 /* CommunityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A268F31E335CA6001267D9 /* CommunityUITests.swift */; };
 		46F23B921E33A39A00C4426B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 46F23B911E33A39A00C4426B /* GoogleService-Info.plist */; };
-		46F23B941E33A65000C4426B /* FacebookSDKs-iOS-4.18.0 in Resources */ = {isa = PBXBuildFile; fileRef = 46F23B931E33A65000C4426B /* FacebookSDKs-iOS-4.18.0 */; };
-		69C2BDD504D5460DE3852C3B /* libPods-Community.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 990F85E2C8260D87A5B3EF22 /* libPods-Community.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +55,7 @@
 		46A268F51E335CA6001267D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46A269031E339EE1001267D9 /* Community.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Community.entitlements; sourceTree = "<group>"; };
 		46F23B911E33A39A00C4426B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		46F23B931E33A65000C4426B /* FacebookSDKs-iOS-4.18.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "FacebookSDKs-iOS-4.18.0"; sourceTree = "<group>"; };
-		990F85E2C8260D87A5B3EF22 /* libPods-Community.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Community.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D46DA3208E23279846156110 /* Pods_Community.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Community.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69C2BDD504D5460DE3852C3B /* libPods-Community.a in Frameworks */,
+				3EADFC9849D6C5D42407634B /* Pods_Community.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +152,7 @@
 		D38F318F7502CA4CEB35BF0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				46F23B931E33A65000C4426B /* FacebookSDKs-iOS-4.18.0 */,
-				990F85E2C8260D87A5B3EF22 /* libPods-Community.a */,
+				D46DA3208E23279846156110 /* Pods_Community.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -280,7 +277,6 @@
 			files = (
 				46A268DE1E335CA6001267D9 /* LaunchScreen.storyboard in Resources */,
 				46F23B921E33A39A00C4426B /* GoogleService-Info.plist in Resources */,
-				46F23B941E33A65000C4426B /* FacebookSDKs-iOS-4.18.0 in Resources */,
 				46A268DB1E335CA6001267D9 /* Assets.xcassets in Resources */,
 				46A268D61E335CA6001267D9 /* Main.storyboard in Resources */,
 			);

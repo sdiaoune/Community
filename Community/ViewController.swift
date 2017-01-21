@@ -8,9 +8,11 @@
 
 import UIKit
 import Firebase
+import FacebookLogin
 
 class ViewController: UIViewController {
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,6 +29,12 @@ class ViewController: UIViewController {
 //        } catch let signOutError as NSError {
 //            print ("Error signing out: %@", signOutError)
 //        }
+        
+        //login facebook
+        let loginButton = LoginButton(readPermissions: [ .email ])
+        loginButton.center = view.center
+        view.addSubview(loginButton)
+        
         
     }
 

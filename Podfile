@@ -3,6 +3,12 @@
 
 target 'Community' do
 
+	use_frameworks!
+
+	pod 'FacebookCore'
+	pod 'FacebookLogin'
+	pod 'FacebookShare'
+
 	pod 'Firebase/Core'
 	pod ‘Firebase/Auth’
 
