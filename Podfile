@@ -4,5 +4,6 @@
 target 'Community' do
 
 	pod 'Firebase/Core'
+	pod ‘Firebase/Auth’
 
 end
